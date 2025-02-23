@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+header,
+main,
+footer {
+  margin: 0 auto;
+  max-width: 75%;
+  padding: 0%;
+}
+
+main,
+footer {
+  padding: 2% 0;
+}
+
+.Logoimg {
+  width: 20%;
+  height: auto;
+}
+
+.SearchButton {
+  width: 10%;
+}
+
+.btnLight {
+  width: 25%;
+}
