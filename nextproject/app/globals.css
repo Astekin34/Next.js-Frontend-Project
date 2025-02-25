@@ -6,13 +6,8 @@ header,
 main,
 footer {
   margin: 0 auto;
-  max-width: 75%;
+  max-width: 100%;
   padding: 0%;
-}
-
-main,
-footer {
-  padding: 2% 0;
 }
 
 .Logoimg {
@@ -24,6 +19,7 @@ footer {
   width: 10%;
 }
 
-.btnLight {
-  width: 25%;
+.Logoimg1 {
+  width: 10%;
+  height: auto;
 }
