@@ -21,16 +21,16 @@ const Dashboard = () => {
 
   return (
     <div className="bg-white dark:bg-gray-900 min-h-screen">
-      <nav className="bg-white dark:bg-gray-900 shadow-md py-3 w-full flex justify-center items-center transition-colors">
-        <div className="max-w-6xl w-full flex justify-between items-center">
+      <nav className="bg-white dark:bg-gray-900 py-3 w-full flex justify-center items-center transition-colors">
+        <div className="max-w-7xl w-full flex justify-between items-center">
           {/* Logo */}
           <div className="flex items-center space-x-2">
             <Image
-              className="Logoimg"
+              className=""
               src="/60736.png"
               alt="logo"
-              width={180}
-              height={38}
+              width={60}
+              height={20}
               priority
             />
             <span className="text-xl text-gray-800 dark:text-white">
@@ -42,7 +42,7 @@ const Dashboard = () => {
           </div>
 
           {/* Menü */}
-          <ul className="flex items-center justify-center mr-12 space-x-8 text-gray-700 dark:text-gray-300">
+          <ul className="flex text-xl items-center justify-center mr-12 ml-6 space-x-8 text-gray-700 dark:text-gray-300">
             <li>
               <a href="#" className="hover:text-black dark:hover:text-white">
                 Home
@@ -95,148 +95,181 @@ const Dashboard = () => {
           The Impact of Technology on the Workplace:
         </h1>
         <BlogList />
-        <Image
-          src="/blog-image.png"
-          alt="Blog Image"
-          width={800}
-          height={450}
-          className="rounded-lg mt-5"
-        />
       </main>
 
       {/* Footer */}
-      <footer className="bg-gray-100 dark:bg-gray-800 py-20 mt-10 w-full flex justify-center">
-        <div className="mx-auto flex flex-col md:flex-row justify-between px-5">
-          <div className="mb-6 md:mb-0 mx-12">
-            <h2 className="text-xl font-semibold text-gray-800 dark:text-white">
-              About
-            </h2>
-            <p className="text-gray-600 dark:text-gray-400 mt-2">
-              <span className="block">
-                A blog platform for developers and designers who want to share
-                their knowledge with others.
-              </span>
-              <span className="block mt-2">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              </span>
-              <span className="block mt-2">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              </span>
-            </p>
-          </div>
-          <div className="mb-6 md:mb-0 mx-12">
-            <h3 className="text-lg font-medium text-gray-800 dark:text-white">
-              Quick Links
-            </h3>
-            <ul className="mt-2 space-y-2">
-              <li>
-                <a
-                  href="#"
-                  className="text-gray-600 dark:text-gray-400 hover:text-black dark:hover:text-white"
-                >
-                  Home
-                </a>
-              </li>
-              <li>
-                <a
-                  href="#"
-                  className="text-gray-600 dark:text-gray-400 hover:text-black dark:hover:text-white"
-                >
-                  About
-                </a>
-              </li>
-              <li>
-                <a
-                  href="#"
-                  className="text-gray-600 dark:text-gray-400 hover:text-black dark:hover:text-white"
-                >
-                  Blog
-                </a>
-              </li>
-              <li>
-                <a
-                  href="#"
-                  className="text-gray-600 dark:text-gray-400 hover:text-black dark:hover:text-white"
-                >
-                  Archived
-                </a>
-              </li>
-              <li>
-                <a
-                  href="#"
-                  className="text-gray-600 dark:text-gray-400 hover:text-black dark:hover:text-white"
-                >
-                  Author
-                </a>
-              </li>
-              <li>
-                <a
-                  href="#"
-                  className="text-gray-600 dark:text-gray-400 hover:text-black dark:hover:text-white"
-                >
-                  Contact
-                </a>
-              </li>
-            </ul>
-          </div>
+      <footer className="bg-gray-100 dark:bg-gray-800 py-20 mt-10 flex flex-col justify-center">
+        <div className=" mx-auto flex flex-col">
+          {" "}
+          <div className="flex flex-col md:flex-row justify-between px-5">
+            <div className="mb-6 md:mb-0 mx-12">
+              <h2 className="text-xl font-semibold text-gray-800 dark:text-white">
+                About
+              </h2>
+              <p className="text-gray-600 dark:text-gray-400 mt-2">
+                <span className="block">
+                  A blog platform for developers and designers who want to share
+                  their knowledge with others.
+                </span>
+                <span className="block">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                </span>
+                <span className="block">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                </span>
+                <span className="block mt-5">
+                  <span className="text-gray-900 dark:text-white font-bold">
+                    Email:
+                  </span>{" "}
+                  info@jstemplate.net
+                </span>
+                <span className="block">
+                  <span className="text-gray-900 dark:text-white font-bold">
+                    Phone:
+                  </span>{" "}
+                  0123-456-789
+                </span>
+              </p>
+            </div>
+            <div className="mb-6 md:mb-0 mx-12">
+              <h3 className="text-lg font-medium text-gray-800 dark:text-white">
+                Quick Links
+              </h3>
+              <ul className="mt-2 space-y-2">
+                <li>
+                  <a
+                    href="#"
+                    className="text-gray-600 dark:text-gray-400 hover:text-black dark:hover:text-white"
+                  >
+                    Home
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    className="text-gray-600 dark:text-gray-400 hover:text-black dark:hover:text-white"
+                  >
+                    About
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    className="text-gray-600 dark:text-gray-400 hover:text-black dark:hover:text-white"
+                  >
+                    Blog
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    className="text-gray-600 dark:text-gray-400 hover:text-black dark:hover:text-white"
+                  >
+                    Archived
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    className="text-gray-600 dark:text-gray-400 hover:text-black dark:hover:text-white"
+                  >
+                    Author
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    className="text-gray-600 dark:text-gray-400 hover:text-black dark:hover:text-white"
+                  >
+                    Contact
+                  </a>
+                </li>
+              </ul>
+            </div>
 
-          <div className="mb-6 md:mb-0 mx-12">
-            <h3 className="text-lg font-medium text-gray-800 dark:text-white">
-              Category
-            </h3>
-            <ul className="mt-2 space-y-2">
-              <li>
-                <a
-                  href="#"
-                  className="text-gray-600 dark:text-gray-400 hover:text-black dark:hover:text-white"
-                >
-                  Lifestyle
-                </a>
-              </li>
-              <li>
-                <a
-                  href="#"
-                  className="text-gray-600 dark:text-gray-400 hover:text-black dark:hover:text-white"
-                >
-                  Technology
-                </a>
-              </li>
-              <li>
-                <a
-                  href="#"
-                  className="text-gray-600 dark:text-gray-400 hover:text-black dark:hover:text-white"
-                >
-                  Travel
-                </a>
-              </li>
-              <li>
-                <a
-                  href="#"
-                  className="text-gray-600 dark:text-gray-400 hover:text-black dark:hover:text-white"
-                >
-                  Business
-                </a>
-              </li>
-              <li>
-                <a
-                  href="#"
-                  className="text-gray-600 dark:text-gray-400 hover:text-black dark:hover:text-white"
-                >
-                  Economy
-                </a>
-              </li>
-              <li>
-                <a
-                  href="#"
-                  className="text-gray-600 dark:text-gray-400 hover:text-black dark:hover:text-white"
-                >
-                  Sports
-                </a>
-              </li>
-            </ul>
+            <div className="mb-6 md:mb-0 mx-12">
+              <h3 className="text-lg font-medium text-gray-800 dark:text-white">
+                Category
+              </h3>
+              <ul className="mt-2 space-y-2">
+                <li>
+                  <a
+                    href="#"
+                    className="text-gray-600 dark:text-gray-400 hover:text-black dark:hover:text-white"
+                  >
+                    Lifestyle
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    className="text-gray-600 dark:text-gray-400 hover:text-black dark:hover:text-white"
+                  >
+                    Technology
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    className="text-gray-600 dark:text-gray-400 hover:text-black dark:hover:text-white"
+                  >
+                    Travel
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    className="text-gray-600 dark:text-gray-400 hover:text-black dark:hover:text-white"
+                  >
+                    Business
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    className="text-gray-600 dark:text-gray-400 hover:text-black dark:hover:text-white"
+                  >
+                    Economy
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    className="text-gray-600 dark:text-gray-400 hover:text-black dark:hover:text-white"
+                  >
+                    Sports
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div className="mx-16">
+              <NewsletterForm />
+            </div>
           </div>
-          <div className="mx-12 flex">
-            <NewsletterForm />
+          <div className="w-full flex justify-start items-start pt-12 ml-16">
+            <div className="flex space-x-2 flex-row">
+              <Image
+                className="dark:bg-white rounded-3xl width"
+                src="/60736.png"
+                alt="logo"
+                width={60}
+                height={80}
+                style={{ height: "60px" }}
+                priority
+              />
+              <span className="text-xl text-gray-800 dark:text-white ">
+                Meta
+                <span className="text-black dark:text-white font-bold">
+                  Blog
+                </span>{" "}
+                <span className="mt-2 block text-gray-500 dark:text-gray-500">
+                  <span className="text-white dark:text-white">
+                    © JS Template 2023.
+                  </span>{" "}
+                  All Rights Reserved.
+                </span>
+              </span>
+            </div>
           </div>
         </div>
       </footer>

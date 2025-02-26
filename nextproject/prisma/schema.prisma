@@ -21,7 +21,7 @@ model Newsletter {
 
 model BlogPost {
   id        String @id @default(uuid())
-  title     String
+  title     String?
   content   String
   author    String?
   imageUrl  String?  // Opsiyonel resim URL'si

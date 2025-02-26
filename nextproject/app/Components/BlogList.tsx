@@ -16,7 +16,12 @@ const BlogList = () => {
   useEffect(() => {
     fetch("/api/posts")
       .then((res) => res.json())
-      .then((data) => setPosts(data));
+      .then((data) => {
+        const sortedPosts = data.sort((a: Post, b: Post) =>
+          b.imageUrl ? 1 : -1
+        );
+        setPosts(sortedPosts);
+      });
   }, []);
 
   return (
@@ -52,6 +57,13 @@ const BlogList = () => {
         </span>
         <span className="block text-gray-500 text-lg">750x100</span>
       </div>
+      <Image
+        src="/blog-image.png"
+        alt="Blog Image"
+        width={800}
+        height={450}
+        className="rounded-lg mt-5"
+      />
     </div>
   );
 };

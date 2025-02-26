@@ -8,18 +8,9 @@ footer {
   margin: 0 auto;
   max-width: 100%;
   padding: 0%;
-}
-
-.Logoimg {
-  width: 20%;
-  height: auto;
+  font-family: "Verdana";
 }
 
 .SearchButton {
   width: 10%;
-}
-
-.Logoimg1 {
-  width: 10%;
-  height: auto;
 }
