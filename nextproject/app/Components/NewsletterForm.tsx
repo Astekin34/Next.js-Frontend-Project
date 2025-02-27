@@ -26,10 +26,11 @@ const NewsletterForm = () => {
 
   return (
     <div className="p-4 bg-white dark:bg-gray-700 rounded-md shadow-md">
-      <h3 className="font-bold text-lg">Weekly Newsletter</h3>
-      <p className="text-sm text-gray-600 dark:text-gray-400">
+      <h3 className="font-bold text-lg text-center">Weekly Newsletter</h3>
+      <p className="text-sm text-center text-gray-500 dark:text-gray-400">
         Get blog articles and offers via email
       </p>
+      <br />
       <form onSubmit={handleSubmit} className="mt-2">
         <input
           type="email"
@@ -41,7 +42,7 @@ const NewsletterForm = () => {
         />
         <button
           type="submit"
-          className="mt-2 bg-blue-600 text-white p-2 rounded w-full"
+          className="mt-2 bg-[#4B6BFB] text-white p-2 rounded w-full"
         >
           Subscribe
         </button>

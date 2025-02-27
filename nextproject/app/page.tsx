@@ -27,22 +27,23 @@ const Dashboard = () => {
           <div className="flex items-center space-x-2">
             <Image
               className=""
-              src="/60736.png"
+              src="/union.png"
               alt="logo"
-              width={60}
-              height={20}
+              width={36}
+              height={36}
               priority
             />
-            <span className="text-xl text-gray-800 dark:text-white">
+            <span className="text-xl text-[#141624] dark:text-white">
               Meta
-              <span className="text-black dark:text-gray-300 font-bold">
-                Blog
-              </span>
+              <span className=" dark:text-gray-300 font-bold">Blog</span>
             </span>
           </div>
 
           {/* Menü */}
-          <ul className="flex text-xl items-center justify-center mr-12 ml-6 space-x-8 text-gray-700 dark:text-gray-300">
+          <ul
+            className="flex text-xl items-center justify-center mr-12 ml-6 space-x-8 text-[#3B3C4A] dark:text-white"
+            style={{ fontFamily: "var(--font-work-sans)" }}
+          >
             <li>
               <a href="#" className="hover:text-black dark:hover:text-white">
                 Home
@@ -90,16 +91,16 @@ const Dashboard = () => {
         </div>
       </nav>
       {/* Diğer sayfa içeriği */}
-      <main className="max-w-4xl mx-auto py-10 px-5">
-        <h1 className="text-3xl font-bold text-gray-800 dark:text-white">
-          The Impact of Technology on the Workplace:
-        </h1>
+      <main className=" py-10 px-5">
         <BlogList />
       </main>
 
       {/* Footer */}
-      <footer className="bg-gray-100 dark:bg-gray-800 py-20 mt-10 flex flex-col justify-center">
-        <div className=" mx-auto flex flex-col">
+      <footer
+        className="bg-gray-100 dark:bg-gray-800 py-20 mt-10 flex flex-col justify-center"
+        style={{ fontFamily: "var(--font-plus-jakarta-sans)" }}
+      >
+        <div className=" mx-auto flex flex-col divide-y">
           {" "}
           <div className="flex flex-col md:flex-row justify-between px-5">
             <div className="mb-6 md:mb-0 mx-12">
@@ -108,14 +109,10 @@ const Dashboard = () => {
               </h2>
               <p className="text-gray-600 dark:text-gray-400 mt-2">
                 <span className="block">
-                  A blog platform for developers and designers who want to share
-                  their knowledge with others.
-                </span>
-                <span className="block">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                </span>
-                <span className="block">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Lorem ipsum dolor sit amet,
+                  <br /> consectetur adipiscing elit,br sed do <br /> eiusmod
+                  tempor incididunt ut labore <br /> et dolore magna aliqua. Ut
+                  enim ad minim veniam.
                 </span>
                 <span className="block mt-5">
                   <span className="text-gray-900 dark:text-white font-bold">
@@ -127,13 +124,13 @@ const Dashboard = () => {
                   <span className="text-gray-900 dark:text-white font-bold">
                     Phone:
                   </span>{" "}
-                  0123-456-789
+                  880 123 456 789
                 </span>
               </p>
             </div>
             <div className="mb-6 md:mb-0 mx-12">
               <h3 className="text-lg font-medium text-gray-800 dark:text-white">
-                Quick Links
+                Quick Link
               </h3>
               <ul className="mt-2 space-y-2">
                 <li>
@@ -246,24 +243,24 @@ const Dashboard = () => {
               <NewsletterForm />
             </div>
           </div>
-          <div className="w-full flex justify-start items-start pt-12 ml-16">
-            <div className="flex space-x-2 flex-row">
+          <div className="w-full flex justify-start items-start mt-16 pt-8 ml-16 ">
+            <div className="flex space-x-2">
               <Image
                 className="dark:bg-white rounded-3xl width"
-                src="/60736.png"
+                src="/LogoLight.png"
                 alt="logo"
-                width={60}
-                height={80}
-                style={{ height: "60px" }}
+                width={48}
+                height={48}
+                style={{ height: "px" }}
                 priority
               />
-              <span className="text-xl text-gray-800 dark:text-white ">
+              <span className="text-2xl text-gray-800 dark:text-white ">
                 Meta
-                <span className="text-black dark:text-white font-bold">
+                <span className="text-black text-2xl dark:text-white font-bold">
                   Blog
                 </span>{" "}
-                <span className="mt-2 block text-gray-500 dark:text-gray-500">
-                  <span className="text-white dark:text-white">
+                <span className="mt-2 block text-gray-500 dark:text-gray-500 text-base">
+                  <span className="text-gray-500 dark:text-white">
                     © JS Template 2023.
                   </span>{" "}
                   All Rights Reserved.
