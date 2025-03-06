@@ -6,6 +6,7 @@ import Image from "next/image";
 import SearchBar from "./Components/Searchbar";
 import BlogList from "./Components/BlogList";
 import NewsletterForm from "./Components/NewsletterForm";
+import DarkModeSwitch from "./Components/DarkModeSwitch";
 
 const Dashboard = () => {
   const { theme, setTheme, systemTheme } = useTheme();
@@ -20,8 +21,8 @@ const Dashboard = () => {
   }
 
   return (
-    <div className="bg-white dark:bg-gray-900 min-h-screen">
-      <nav className="bg-white dark:bg-gray-900 py-3 w-full flex justify-center items-center transition-colors">
+    <div className="bg-white dark:bg-[#181a2a] min-h-screen">
+      <nav className="bg-white dark:bg-[#181a2a]  py-3 w-full flex justify-center items-center transition-colors">
         <div className="max-w-7xl w-full flex justify-between items-center">
           {/* Logo */}
           <div className="flex items-center space-x-2">
@@ -77,16 +78,7 @@ const Dashboard = () => {
             <SearchBar />
 
             {/* Tema Değiştirici Buton */}
-            <button
-              onClick={() =>
-                setTheme(
-                  theme === "dark" || systemTheme === "dark" ? "light" : "dark"
-                )
-              }
-              className="w-10 h-10 flex items-center justify-center bg-white dark:bg-gray-800 rounded-full shadow-md transition"
-            >
-              {theme === "dark" || systemTheme === "dark" ? "🌞" : "🌙"}
-            </button>
+            <DarkModeSwitch />
           </div>
         </div>
       </nav>
@@ -97,10 +89,10 @@ const Dashboard = () => {
 
       {/* Footer */}
       <footer
-        className="bg-gray-100 dark:bg-gray-800 py-20 mt-10 flex flex-col justify-center"
+        className="bg-gray-100 dark:bg-[#141624] py-20 mt-10 flex flex-col justify-center"
         style={{ fontFamily: "var(--font-plus-jakarta-sans)" }}
       >
-        <div className=" mx-auto flex flex-col divide-y">
+        <div className=" mx-auto flex flex-col divide-y dark:divide-[#242535]">
           {" "}
           <div className="flex flex-col md:flex-row justify-between px-5">
             <div className="mb-6 md:mb-0 mx-12">
@@ -246,13 +238,12 @@ const Dashboard = () => {
           <div className="w-full flex justify-start items-start mt-16 pt-8 ml-16 ">
             <div className="flex space-x-2">
               <Image
-                className="dark:bg-white rounded-3xl width"
-                src="/LogoLight.png"
+                className="rounded-3xl"
+                src={theme === "dark" ? "/LogoDrk.png" : "/LogoLight.png"}
                 alt="logo"
                 width={48}
                 height={48}
-                style={{ height: "px" }}
-                priority
+                style={{ height: "48px" }}
               />
               <span className="text-2xl text-gray-800 dark:text-white ">
                 Meta
@@ -266,6 +257,11 @@ const Dashboard = () => {
                   All Rights Reserved.
                 </span>
               </span>
+              <div className="flex pl-[500px] items-end divide-x-2 divide-[#E8E8EA] dark:divide-[#242535] text-gray-500 dark:text-white">
+                <span className="pr-4">Terms of Use</span>
+                <span className="px-4">Privacy Policy</span>
+                <span className="pl-4">Cookie Policy</span>
+              </div>
             </div>
           </div>
         </div>

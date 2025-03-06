@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import Image from "next/image";
 
 const NewsletterForm = () => {
   const [email, setEmail] = useState("");
@@ -25,19 +26,27 @@ const NewsletterForm = () => {
   };
 
   return (
-    <div className="p-4 bg-white dark:bg-gray-700 rounded-md shadow-md">
-      <h3 className="font-bold text-lg text-center">Weekly Newsletter</h3>
-      <p className="text-sm text-center text-gray-500 dark:text-gray-400">
+    <div className="p-4 w-[392px] h-[254px] bg-white dark:bg-[#242535] rounded-md shadow-md">
+      <h3 className="font-semibold text-xl text-center mt-4">
+        Weekly Newsletter
+      </h3>
+      <p className="text-base text-center text-gray-500 dark:text-gray-400">
         Get blog articles and offers via email
       </p>
       <br />
-      <form onSubmit={handleSubmit} className="mt-2">
+      <form onSubmit={handleSubmit} className="mt-2 mx-auto w-4/5">
         <input
           type="email"
           placeholder="Your Email"
           value={email}
           onChange={(e) => setEmail(e.target.value)}
-          className="w-full p-2 rounded border-gray-300 dark:border-gray-700 bg-white dark:bg-gray-900"
+          className="w-full p-3 rounded border dark:border-[#3B3C4A] bg-white dark:bg-gray-900 
+             bg-no-repeat bg-right pr-10"
+          style={{
+            backgroundImage: "url('/mail.png')",
+            backgroundSize: "20px",
+            backgroundPosition: "right 10px center",
+          }}
           required
         />
         <button
