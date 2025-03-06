@@ -2,6 +2,7 @@
 
 import { useTheme } from "next-themes";
 import { useEffect, useState } from "react";
+import Link from "next/link";
 import Image from "next/image";
 import SearchBar from "./Components/Searchbar";
 import BlogList from "./Components/BlogList";
@@ -46,29 +47,41 @@ const Dashboard = () => {
             style={{ fontFamily: "var(--font-work-sans)" }}
           >
             <li>
-              <a href="#" className="hover:text-black dark:hover:text-white">
+              <Link href="/" className="hover:text-black dark:hover:text-white">
                 Home
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="#" className="hover:text-black dark:hover:text-white">
+              <Link
+                href="/blogpost"
+                className="hover:text-black dark:hover:text-white"
+              >
                 Blog
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="#" className="hover:text-black dark:hover:text-white">
+              <Link
+                href="/singlepost"
+                className="hover:text-black dark:hover:text-white"
+              >
                 Single Post
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="#" className="hover:text-black dark:hover:text-white">
+              <Link
+                href="/pages"
+                className="hover:text-black dark:hover:text-white"
+              >
                 Pages
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="#" className="hover:text-black dark:hover:text-white">
+              <Link
+                href="/contact"
+                className="hover:text-black dark:hover:text-white"
+              >
                 Contact
-              </a>
+              </Link>
             </li>
           </ul>
 
